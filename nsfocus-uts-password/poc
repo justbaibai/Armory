@@ -1,0 +1,7 @@
+/webapi/v1/system/accountmanage/account
+复现过程：
+
+登录的时候使用管理员admin进行登录，使用burpsuite进行抓包
+修改响应包，将{“status”:false 修改为{“status”:true
+修改完之后，响应包将会泄露admin用户密码的MD5值
+使用获取到的MD5值进行登录。
